@@ -7,9 +7,10 @@ pipeline {
     }
 
     environment {
-        DB_URL= 'jdbc:mysql://mysqltest-container:3306/cpgndb?characterEncoding=UTF-8'
-        DB_USER = 'admin'
-        DB_PASSWORD = '1234'
+        DB_HOST = 'localhost'
+        DB_NAME = 'myapp'
+        DB_USER = 'jenkins'
+        DB_PASS = 'jenkins123'
         MAIL_USER = 'flowercharan0307@gmail.com'
         MAIL_PASSWORD = 'oaov kxrh zfaz mynm'
         TOSS_CLIENT_KEY = 'test_ck_E92LAa5PVbbbmKAkDZmJV7YmpXyJ'
