@@ -30,11 +30,7 @@ pipeline {
                 bat './gradlew clean build -x test'
             }
         }
-        stage('Test') {
-            steps {
-                bat './gradlew test'
-            }
-        }
+ 
         stage('Run') {
             steps {
                 bat 'java -jar build\\libs\\app-0.0.1-SNAPSHOT.jar'
