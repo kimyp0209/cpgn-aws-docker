@@ -5,10 +5,10 @@ spring:
     name: app1
 
   datasource:
-    url: ${DB_URL}
-    username: ${DB_USER}
-    password: ${DB_PASS}
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mariadb://${DB_HOST:localhost}:3306/${DB_NAME:myapp}?characterEncoding=UTF-8
+    username: ${DB_USER:jenkins}
+    password: ${DB_PASS:jenkins123}
+    driver-class-name: org.mariadb.jdbc.Driver
 
   jpa:
     hibernate:
