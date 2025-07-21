@@ -5,9 +5,9 @@ spring:
     name: app1
 
   datasource:
-    url: jdbc:mysql://mysqltest-container:3306/cpgndb?characterEncoding=UTF-8
-    username: admin
-    password: 1234
+    url: ${DB_URL}
+    username: ${DB_USER}
+    password: ${DB_PASS}
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
