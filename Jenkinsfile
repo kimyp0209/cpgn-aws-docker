@@ -11,6 +11,7 @@ pipeline {
         DB_NAME = 'myapp'
         DB_USER = 'jenkins'
         DB_PASS = 'jenkins123'
+        UPLOAD_PATH=/home/ec2-user/uploads
         MAIL_USER = 'flowercharan0307@gmail.com'
         MAIL_PASSWORD = 'oaov kxrh zfaz mynm'
         TOSS_CLIENT_KEY = 'test_ck_E92LAa5PVbbbmKAkDZmJV7YmpXyJ'
