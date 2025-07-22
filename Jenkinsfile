@@ -17,6 +17,7 @@ pipeline {
         TOSS_CLIENT_KEY = 'test_ck_E92LAa5PVbbbmKAkDZmJV7YmpXyJ'
         TOSS_SECRET_KEY = 'test_sk_Z1aOwX7K8mzzkwkOkq2W3yQxzvNP'
         OPEN_API_KEY = credentials('OPEN_API_KEY')
+        CORS_ALLOWED_ORIGINS=*
     }
 
     stages {
